@@ -1,0 +1,11 @@
+package org.mvpigs.blockChain;
+
+public class BlockChain {
+	//Propiedades
+	BlockChain blockChain = new BlockChain();
+	
+	//Metodos 
+	public void addOrigin(){
+		
+	}
+}

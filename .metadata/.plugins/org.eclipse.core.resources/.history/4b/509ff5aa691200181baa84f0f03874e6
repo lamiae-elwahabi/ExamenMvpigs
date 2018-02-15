@@ -1,0 +1,25 @@
+package org.mvpigs.wallet;
+
+import java.security.PrivateKey;
+import java.security.PublicKey;
+
+public class Wallet {
+	//Propiedades
+	private String address = "";
+	private String sKey = "";
+	public void setSK(PrivateKey private1) {
+		
+		
+	}
+
+	public void setAddress(PublicKey public1) {
+		
+		
+	}
+
+	public Object getAddress() {
+		
+		return null;
+	}
+
+}

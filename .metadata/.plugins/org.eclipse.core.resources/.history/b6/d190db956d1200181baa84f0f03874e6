@@ -1,0 +1,35 @@
+package org.mvpigs.wallet;
+
+import java.security.PrivateKey;
+import java.security.PublicKey;
+
+public class Wallet {
+	//Propiedades
+	private PublicKey Address = null ;  //clave pública de la wallet
+	private PrivateKey SKey = null;  //clave privada de la wallet
+	private int total_input = 0;
+	private int total_output = 0;
+	private String inputTransactions = "";
+	private String outputTransactions = "";
+	
+	public void setSK(PrivateKey private1) {
+		
+		
+	}
+
+	//Getters y Setters 
+	
+
+	public void setAddress(PublicKey publicKey) {
+		Address = publicKey;
+	}
+	
+	
+
+	public void generateKeyPair() {
+		
+		
+	}
+	
+
+}
