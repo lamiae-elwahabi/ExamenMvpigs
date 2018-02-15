@@ -5,7 +5,7 @@ import org.mvpigs.transaction.Transaction;
 public class BlockChain {
 	//Propiedades
 	BlockChain blockchain = null;
-	
+
 	//Getters y Setters
 	public BlockChain getBlockchain() {
 		return blockchain;
@@ -15,19 +15,17 @@ public class BlockChain {
 		this.blockchain = blockchain;
 	}
 	//Metodos 
-	
+
 	public Transaction addOrigin(Transaction trx) {
 		return trx;
-}
+	}
 
 	public void summarize(Integer position) {
-		this.summarize(position);
-		
 	}
 	//Visualiza el blockchain
 	public void summarize() {
 		this.getBlockchain();
-	
+
 	}
 
 }

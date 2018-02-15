@@ -10,16 +10,13 @@ import org.junit.Before;
 
 public class BlockChainTest {
 	BlockChain blockChain = new BlockChain();
-	
+
 	@Before
 	public  void setup() {
 		blockChain = new BlockChain();
 	}
 	@Test
 	public void testAssertTrue() {
+		assertTrue(blockChain == blockChain);
 	}
-	
-
-	
-
 }

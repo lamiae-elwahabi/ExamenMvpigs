@@ -20,9 +20,9 @@ public class Wallet {
 	private String inputTransactions = "";
 	private String outputTransactions = "";
 	private GenSig genSig;
-	
+
 	public void setSK(PrivateKey sKey) {
-			}
+	}
 	//Getters y Setters 
 	public PublicKey getAddress() {
 		return Address;
@@ -39,7 +39,7 @@ public class Wallet {
 	public void setSKey(PrivateKey sKey) {
 		SKey = sKey;
 	}
-	
+
 	public void setInputTransactions(String inputTransactions) {
 		this.inputTransactions = inputTransactions;
 	}
@@ -72,45 +72,45 @@ public class Wallet {
 		KeyPair pares = GenSig.generateKeyPair();
 		this.setSK(pares.getPrivate());
 		this.setAddress(pares.getPublic());
-		
+
 	}
 	public String toString(){
 		System.out.println( getTotal_input() + "\n" + getTotal_output() + "\n" + getBalance());
 		return inputTransactions;
 	}
 	public void loadCoins(BlockChain bChain) {
-		
-		
+
+
 	}
 	public void loadInputTransactions(BlockChain bChain) {
-		
-		
+
+
 	}
 	public void loadOutputTransactions(BlockChain bChain) {
-		
-		
+
+
 	}
 	public Object getOutputTransactions() {
-		
+
 		return null;
 	}
 	public Object getInputTransactions() {
-		
-		
+
+
 		return null;
 	}
 	public byte[] signTransaction(String message) {
-		
+
 		return null;
 	}
 	public void sendCoins(PublicKey address2, Double pigcoins, String message, BlockChain bChain) {
-		
-		
+
+
 	}
 	public Map<String, Double> collectCoins(Double pigcoins) {
-		
+
 		return null;
 	}
 
-	
+
 }

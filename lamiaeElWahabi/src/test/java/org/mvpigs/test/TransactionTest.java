@@ -5,17 +5,26 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.mvpigs.transaction.Transaction;
-import org.mvpigs.wallet.Wallet;
+
 
 public class TransactionTest {
 	//Inicializamos los parametros a utilizar en los casos test
 
 	Transaction transaction = new Transaction();
+	byte[] signaturee = {1, 5, 6};
+
 	@Before
 	public  void setup() {
 		transaction= new Transaction();
 	}
 	@Test
-	public void testAssertTrue() {
+	public void testAssertArrayEqual() {
+		byte[] signature = {1, 5, 6};
+		assertArrayEquals(signaturee, signature);
+
+	}
+	@Test 
+	public void testAssertEqual() {
+		assertEquals((transaction.getHash()), ""); 
 	}
 }

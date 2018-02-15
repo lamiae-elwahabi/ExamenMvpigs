@@ -1,0 +1,28 @@
+package org.mvpigs.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mvpigs.transaction.Transaction;
+
+
+public class TransactionTest {
+	//Inicializamos los parametros a utilizar en los casos test
+
+	Transaction transaction = new Transaction();
+	
+	@Before
+	public  void setup() {
+		transaction= new Transaction();
+	}
+	@Test
+	public void testAssertTrue() {
+		byte[] signature = {1, 5, 6};
+		
+	}
+	@Test 
+	public void testAssertEqual() {
+		assertEquals((transaction.getHash()), ""); 
+	}
+}

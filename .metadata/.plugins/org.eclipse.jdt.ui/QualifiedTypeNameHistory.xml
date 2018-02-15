@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.mvpigs.pigcoin.GenSig"/>
+<fullyQualifiedTypeName name="java.security.KeyPair"/>
+<fullyQualifiedTypeName name="org.mvpigs.wallet.Wallet"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.mvpigs.transaction.Transaction"/>
+<fullyQualifiedTypeName name="org.mvpigs.blockChain.BlockChain"/>
+</qualifiedTypeNameHistroy>

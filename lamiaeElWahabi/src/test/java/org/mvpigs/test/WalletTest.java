@@ -8,7 +8,7 @@ import org.mvpigs.wallet.Wallet;
 
 public class WalletTest {
 	Wallet wallet = new Wallet();
-	
+
 	@Before
 	public  void setup() {
 		wallet= new Wallet();

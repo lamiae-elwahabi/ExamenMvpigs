@@ -1,0 +1,33 @@
+package org.mvpigs.blockChain;
+
+import org.mvpigs.transaction.Transaction;
+
+public class BlockChain {
+	//Propiedades
+	BlockChain blockchain = null;
+	
+	//Getters y Setters
+	public BlockChain getBlockchain() {
+		return blockchain;
+	}
+
+	public void setBlockchain(BlockChain blockchain) {
+		this.blockchain = blockchain;
+	}
+	//Metodos 
+	
+	public Transaction addOrigin(Transaction trx) {
+		return trx;
+}
+
+	public void summarize(Integer position) {
+		
+			
+		}
+	//Visualiza el blockchain
+	public void summarize() {
+		this.getBlockchain();
+	
+	}
+
+}
