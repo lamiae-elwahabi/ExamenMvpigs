@@ -1,38 +1,21 @@
 package org.mvpigs.test;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.*;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+import org.junit.Before;
+import org.junit.Test;
+import org.mvpigs.transaction.Transaction;
+import org.mvpigs.wallet.Wallet;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+public class TransactionTest {
+	//Inicializamos los parametros a utilizar en los casos test
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	Transaction transaction = new Transaction();
+	@Before
+	public  void setup() {
+		transaction= new Transaction();
+	}
+	@Test
+	public void testAssertTrue() {
+	}
 }

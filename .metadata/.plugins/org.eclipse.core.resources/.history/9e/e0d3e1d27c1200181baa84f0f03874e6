@@ -1,0 +1,11 @@
+package org.mvpigs.test;
+
+import org.mvpigs.wallet.Wallet;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+//Inicializamos los parametros a utilizar en los casos test
+
+	Transaction transaction = new Transaction();

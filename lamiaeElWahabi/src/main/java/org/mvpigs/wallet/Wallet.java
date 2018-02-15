@@ -40,6 +40,12 @@ public class Wallet {
 		SKey = sKey;
 	}
 	
+	public void setInputTransactions(String inputTransactions) {
+		this.inputTransactions = inputTransactions;
+	}
+	public void setOutputTransactions(String outputTransactions) {
+		this.outputTransactions = outputTransactions;
+	}
 	public double getTotal_input() {
 		return total_input;
 	}
@@ -67,7 +73,10 @@ public class Wallet {
 		this.setSK(pares.getPrivate());
 		this.setAddress(pares.getPublic());
 		
-		
+	}
+	public String toString(){
+		System.out.println( getTotal_input() + "\n" + getTotal_output() + "\n" + getBalance());
+		return inputTransactions;
 	}
 	public void loadCoins(BlockChain bChain) {
 		
@@ -87,6 +96,7 @@ public class Wallet {
 	}
 	public Object getInputTransactions() {
 		
+		
 		return null;
 	}
 	public byte[] signTransaction(String message) {
@@ -101,12 +111,6 @@ public class Wallet {
 		
 		return null;
 	}
-	 
-
 
 	
-
-	
-	
-
 }

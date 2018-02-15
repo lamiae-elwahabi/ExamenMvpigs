@@ -5,3 +5,4 @@
 1518710860716	Rename package 'BlockChain'
 1518711582342	Rename package 'org.mvpigs.lamiaeElWahabi'
 1518713111404	Convert local variable 'genSig' to field
+1518718494912	Rename type 'AppTest'

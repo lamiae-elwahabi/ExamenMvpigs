@@ -1,0 +1,24 @@
+package org.mvpigs.blockChain;
+
+import org.mvpigs.transaction.Transaction;
+
+public class BlockChain {
+	//Propiedades
+
+	//Metodos 
+	
+	public void addOrigin(Transaction trx) {
+		
+		
+	}
+
+	public void summarize(Integer position) {
+		
+	}
+
+	public void summarize() {
+		
+		
+	}
+
+}

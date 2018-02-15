@@ -4,23 +4,30 @@ import org.mvpigs.transaction.Transaction;
 
 public class BlockChain {
 	//Propiedades
-	//Crear el objeto bockChain
+	BlockChain blockchain = null;
 	
-	
+	//Getters y Setters
+	public BlockChain getBlockchain() {
+		return blockchain;
+	}
+
+	public void setBlockchain(BlockChain blockchain) {
+		this.blockchain = blockchain;
+	}
 	//Metodos 
 	
-	public void addOrigin(Transaction trx) {
-		
-		
-	}
+	public Transaction addOrigin(Transaction trx) {
+		return trx;
+}
 
 	public void summarize(Integer position) {
+		this.summarize(position);
 		
 	}
-
+	//Visualiza el blockchain
 	public void summarize() {
-		// TODO Auto-generated method stub
-		
+		this.getBlockchain();
+	
 	}
 
 }

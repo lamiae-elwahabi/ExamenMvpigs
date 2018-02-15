@@ -1,0 +1,14 @@
+package org.mvpigs.test;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+import org.mvpigs.transaction.Transaction;
+
+	public class TransactionTest {
+		//Inicializamos los parametros a utilizar en los casos test
+	
+	Transaction transaction = new Transaction();
+	@Test
+	public void testAssertTrue() {
+	}

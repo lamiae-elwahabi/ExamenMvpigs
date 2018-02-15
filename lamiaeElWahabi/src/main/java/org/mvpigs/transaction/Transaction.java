@@ -6,8 +6,12 @@ public class Transaction {
 	
 	//Propiedades
 	private String hash = "";
+	private double prev_hash = 0.0;
+	private PublicKey pKey_sender = null;
+	private PublicKey pKey_recipient = null;
 	private double pigcoins = 0.0;
 	private String message = "";
+	byte[] signature;
 	
 	//Constructor
 	public Transaction() {
@@ -21,6 +25,10 @@ public class Transaction {
 	}
 	//Getters y Setters
 	
+		public Transaction(String string, String string2, PublicKey address, PublicKey address2, int i, String string3) {
+		
+	}
+
 		public String getHash() {
 			return hash;
 		}
@@ -44,8 +52,6 @@ public class Transaction {
 		public void setMessage(String message) {
 			this.message = message;
 		}
-		//Metodos
-				public Transaction(String string, String string2, PublicKey address, PublicKey address2, int i, String string3) {
-					
-				}
+		
+				
 }

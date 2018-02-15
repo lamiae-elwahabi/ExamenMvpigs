@@ -1,0 +1,19 @@
+package org.mvpigs.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mvpigs.transaction.Transaction;
+import org.mvpigs.wallet.Wallet;
+
+public class TransactionTest {
+	//Inicializamos los parametros a utilizar en los casos test
+	
+	
+	
+	Transaction transaction = new Transaction();
+	@Test
+	public void testAssertTrue() {
+	}
+}
