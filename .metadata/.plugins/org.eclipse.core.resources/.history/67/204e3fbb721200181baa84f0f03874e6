@@ -1,0 +1,18 @@
+package org.mvpigs.transaction;
+
+import java.security.PublicKey;
+
+public class Transaction {
+	public Transaction(String string, String string2, PublicKey address, PublicKey address2, int i, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+	public Transaction() {
+		// TODO Auto-generated constructor stub
+	}
+	//Propiedades
+	private Sring hash = "";
+	private double pigcoins = 0.0;
+	private String message = "";
+	private byte[] signature 
+
+}

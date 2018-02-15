@@ -1,12 +1,26 @@
 package org.mvpigs.blockChain;
 
+import org.mvpigs.transaction.Transaction;
+
 public class BlockChain {
 	//Propiedades
 	//Crear el objeto bockChain
-	BlockChain blockChain = new BlockChain();
+	
 	
 	//Metodos 
-	public void addOrigin(){
+	
+	public void addOrigin(Transaction trx) {
+		
 		
 	}
+
+	public void summarize(Integer position) {
+		
+	}
+
+	public void summarize() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

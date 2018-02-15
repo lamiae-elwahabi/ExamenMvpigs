@@ -1,8 +1,13 @@
 package org.mvpigs.wallet;
 
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
 import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.security.SecureRandom;
+import java.util.Map;
 
+import org.mvpigs.blockChain.BlockChain;
 import org.mvpigs.pigcoin.GenSig;
 
 public class Wallet {
@@ -16,17 +21,15 @@ public class Wallet {
 	private String outputTransactions = "";
 	private GenSig genSig;
 	
-	public void setSK(PrivateKey private1) {
-		
-		
-	}
+	public void setSK(PrivateKey sKey) {
+			}
 	//Getters y Setters 
 	public PublicKey getAddress() {
 		return Address;
 	}
 
-	public void setAddress(PublicKey address) {
-		Address = address;
+	public void setAddress(PublicKey pKey) {
+		Address = pKey;
 	}
 
 	public PrivateKey getSKey() {
@@ -36,17 +39,70 @@ public class Wallet {
 	public void setSKey(PrivateKey sKey) {
 		SKey = sKey;
 	}
+	
+	public double getTotal_input() {
+		return total_input;
+	}
+	public void setTotal_input(double total_input) {
+		this.total_input = total_input;
+	}
+	public double getTotal_output() {
+		return total_output;
+	}
+	public void setTotal_output(double total_output) {
+		this.total_output = total_output;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
 	//Metodos
 	/* genera el par clave privada - clave pública
 	 *  para la wallet utilizando la clase GenSig 
 	 */
 	public void generateKeyPair() {
-		genSig = new GenSig();
-		GenSig.generateKeyPair();
-	
-	
+		KeyPair pares = GenSig.generateKeyPair();
+		this.setSK(pares.getPrivate());
+		this.setAddress(pares.getPublic());
+		
 		
 	}
+	public void loadCoins(BlockChain bChain) {
+		
+		
+	}
+	public void loadInputTransactions(BlockChain bChain) {
+		
+		
+	}
+	public void loadOutputTransactions(BlockChain bChain) {
+		
+		
+	}
+	public Object getOutputTransactions() {
+		
+		return null;
+	}
+	public Object getInputTransactions() {
+		
+		return null;
+	}
+	public byte[] signTransaction(String message) {
+		
+		return null;
+	}
+	public void sendCoins(PublicKey address2, Double pigcoins, String message, BlockChain bChain) {
+		
+		
+	}
+	public Map<String, Double> collectCoins(Double pigcoins) {
+		
+		return null;
+	}
+	 
+
 
 	
 
